@@ -1,4 +1,4 @@
-Alfred Deno Workflows
+# Alfred Deno Workflows
 
 This is a collection of Alfred workflows I have created using the [Alfredo](https://github.com/j3lte/alfredo) tool.
 

@@ -70,12 +70,13 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>if [ -f "/opt/homebrew/bin/deno" ]
+				<string>#!/bin/sh
+if [ -f "/opt/homebrew/bin/deno" ]
 then
-  /opt/homebrew/bin/deno run -A run.ts $@
-elif [ -f "$HOME/.deno/bin/deno"]
+  /opt/homebrew/bin/deno run -A run.ts "$@"
+elif [ -f "$HOME/.deno/bin/deno" ]
 then
-  "$HOME/.deno/bin/deno" run -A run.ts $@
+  "$HOME/.deno/bin/deno" run -A run.ts "$@"
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -143,25 +144,27 @@ fi</string>
 		<key>1838D68B-7968-4864-AE85-33AF6790F5D9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<real>575</real>
 			<key>ypos</key>
-			<integer>70</integer>
+			<real>70</real>
 		</dict>
 		<key>2FF233F6-5CF8-4050-BB3C-193ABC9E1EC1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<real>575</real>
 			<key>ypos</key>
-			<integer>270</integer>
+			<real>270</real>
 		</dict>
 		<key>B68FE567-9E68-5A45-517D-3595B7C4A5A0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<real>80</real>
 			<key>ypos</key>
-			<integer>70</integer>
+			<real>70</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
